@@ -24,7 +24,7 @@ export default function Portfolio() {
                         />
                       </div>
                   </div>)}
-                  {IsModal && <div  className='fixed inset-0 row bg-sky-950/25'>
+                  {IsModal && <div  className='fixed inset-0 z-500 row bg-sky-950/25'>
                     <div onClick={()=>{setIsModal(false)}} className='absolute inset-0'></div>
                     <img src={ImageSource} className='w-1/2 relative' alt="" />
                   </div>}
