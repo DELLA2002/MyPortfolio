@@ -14,12 +14,15 @@ export default function Portfolio() {
                 </div>
                 <div className="row">
                   {images.map((image,index)=>
-                    <div key={index} className='sm:w-full md:w-1/2 lg:w-1/3 p-10'>
-                        <img src={image} className='img-layer w-full rounded-lg' alt="" 
+                  <div key={index} className='sm:w-full md:w-1/2 lg:w-1/3 p-10 '>
+                      <div className='bg-teal-400 rounded-lg relative overflow-hidden flex items-center justify-center'>
+                        <i className='fa-solid fa-plus text-9xl absolute text-white'></i>
+                        <img src={image} className='img-layer relative w-full rounded-lg' alt="" 
                           onClick={(e)=> {setIsModal(true);
                             setImageSource(e.target.getAttribute('src'));
                           }}
                         />
+                      </div>
                   </div>)}
                   {IsModal && <div  className='fixed inset-0 row bg-sky-950/25'>
                     <div onClick={()=>{setIsModal(false)}} className='absolute inset-0'></div>

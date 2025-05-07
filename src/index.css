@@ -56,13 +56,18 @@
   background-color: black;
   width: 100px;
 }
-.img-layer:hover{
-  cursor: pointer;
-}
+
 nav{
   z-index: 100;
 }
 
 .row{
   @apply flex flex-wrap justify-center items-center;
+}
+.img-layer{
+  transition-duration: 0.5s;
+}
+.img-layer:hover{
+  cursor: pointer;
+  opacity: 0.1;
 }
