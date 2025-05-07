@@ -17,7 +17,7 @@ export default function Navbar() {
                 <div className=" md:block md:w-auto" id="navbar-default">
                 <ul className="font-medium items-center flex p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
-                    <NavLink to='about' className="block text-xl text-white py-2 px-3 dark:text-white md:dark:text-blue-500" aria-current="page">About</NavLink>
+                    <NavLink to='about' className="block text-xl text-white py-2 px-3 dark:text-white" aria-current="page">About</NavLink>
                     </li>
                     <li>
                     <NavLink to='portfolio' className="block text-xl text-white py-2 px-3 dark:text-white">Portfolio</NavLink>
